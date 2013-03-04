@@ -28,6 +28,9 @@ local.properties
 # PDT-specific
 .buildpath
 
+# Web config for facebook details
+web.config
+
 
 #################
 ## Visual Studio

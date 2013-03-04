@@ -1,0 +1,20 @@
+﻿@using FacebookSite.Models
+@model MyAppUser
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<article class="intro" style="background-image: url('')">
+    <span id="profilePicture">
+        @if (Model.ProfilePicture != null && Model.ProfilePicture.Data != null)
+        {
+            <img src="@Model.ProfilePicture.Data.Url"  />
+        }
+    </span>
+    <h3>Welcome @Model.Name</h3>
+    <img src="@Url.Content("~/content/images/hume-small.jpg")"/>
+</article>
+
+<article id="content">
+    <div>Some stuff goes here</div>
+</article>
